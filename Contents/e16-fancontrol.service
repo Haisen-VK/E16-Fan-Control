@@ -1,0 +1,7 @@
+[Unit]
+Description=e16 fan control unit
+After=multi-user.target
+[Service]
+ExecStart=/usr/local/sbin/E16-FanControl -autoSet
+[Install]
+WantedBy=multi-user.target
